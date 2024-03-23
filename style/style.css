@@ -1,0 +1,454 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url(../_fonts/Oswald-VariableFont_wght.ttf);
+}
+
+html {
+	overflow: auto;
+}
+
+body {
+	flex: 1;
+
+	padding-bottom: 50px;
+}
+
+
+header#cabecalho {
+
+	margin-bottom: 80px;
+	position: relative;
+	height: 200px;
+	background: url(../_admin/_imgMenu/3g.png) no-repeat center;
+	background-color: rgb(29, 28, 28);
+}
+
+
+
+nav {
+	position: relative;
+	top: 105%;
+	text-align: center;
+	width: 100%;
+	z-index: 1;
+}
+
+nav ul {
+
+	font-family: 'arial';
+	font-size: 20px;
+	z-index: 0;
+	vertical-align: top;
+
+}
+
+
+nav li {
+	display: inline-block;
+	justify-content: center;
+	padding: 0px;
+	margin: 2px;
+	transition: background-color 2s;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .40);
+	list-style: none;
+	z-index: 1;
+}
+
+nav li a:hover {
+	background-color: rgb(80, 80, 80);
+	transition: 0.5s;
+	color: white;
+}
+
+nav li a {
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.dropdown-menu {
+	position: absolute;
+	display: none;
+	padding-top: 2px;
+	min-width: 142px;
+	text-align: center;
+	background-color: white;
+}
+
+.dropdown-menu a {
+
+	display: block;
+	clear: both;
+}
+
+.dropdown:hover .dropdown-menu {
+
+	display: block;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+.form label {
+	color: black;
+	font-family: 'arial';
+	padding: 11px;
+
+}
+
+.form input {
+	border-radius: 8px;
+	border: 1px solid #000000;
+	padding: 3px;
+
+}
+
+.form input[type="submit"] {
+	border-radius: 8px;
+	border: 1px solid #000000;
+	margin: 2%;
+	padding: 3px;
+	font-size: 20px;
+}
+
+
+
+#loginform a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 3px;
+}
+
+div#container {
+
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px;
+	max-width: 100%;
+	padding: 0.52%;
+}
+
+div#img {
+	width: 45vh;
+	margin: 3vh;
+	padding: 4vh 4vh 4vh 4vh;
+	border: 1px solid #ccc;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#img img {
+	width: 100%;
+	height: auto;
+}
+
+div#img a {
+
+
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding: 8px;
+	background-color: gray;
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+div.container {
+
+	text-align: center;
+	padding: 2%;
+	display: inline-flex;
+	flex-wrap: wrap;
+
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.col {
+
+	font-family: 'Oswald', sans-serif;
+	width: calc(50% - 20px);
+	margin: 10px;
+	background-color: rgba(0, 0, 0, .80);
+	padding: 160px;
+	box-sizing: border-box;
+
+	border-radius: 12px;
+	font-size: 9vh;
+	text-decoration: none;
+	color: black;
+	transition: background-color 0.5s;
+}
+
+.col:hover {
+	background-color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+	.col {
+		width: calc(100% - 20px);
+	}
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+
+	background-color: rgb(29, 28, 28);
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+
+section#ap {
+	background-color: #f0f0f0;
+	text-align: center;
+
+}
+
+
+
+.aligntbl {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	height: 40%;
+
+}
+
+table {
+	background-color: rgba(0, 0, 0, .1);
+	text-align: center;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 20px;
+
+}
+
+.form {
+	display: flex;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+
+#cadcliente {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 50px;
+	padding: 2px;
+	font-family: Verdana, Trebuchet, sans-serif;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#cadcliente select {
+	width: 130px;
+	height: 30px;
+	padding: 5px;
+	margin: 2%;
+
+}
+
+#loginform {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 7vh;
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+
+
+}
+
+.aligncenter {
+	display: flex;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+section#pedidoinfo {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 20px;
+	gap: 20px;
+}
+
+section#pedidoinfo a {
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 2s;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .40);
+	color: black;
+	text-decoration: none;
+}
+
+section#pedidoinfo a:hover {
+	background-color: rgb(80, 80, 80);
+	transition: 0.5s;
+	color: white;
+}
+
+figure#img {
+
+margin: 20px;
+border: 1px solid black;
+margin-right: 80px;
+padding: 10px;
+color: rgba(255, 255, 255, 0.8);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+} 
+
+div.container {
+
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-self: center;
+	
+}
+
+div.containerprod {
+
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-self: center;
+	background-color: rgb(29, 28, 28);
+	padding: 2%;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+div#prodinfo {
+
+
+	text-align: left;
+	padding: 20px;
+	font-size: 30px;
+	margin-left: 80px;
+	margin-top: 150px;
+	
+}
+
+div#prodinfo a {
+
+	padding: 8px;
+	margin: 20%;
+	border-radius: 8px;
+	transition: background-color 0.5s;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .40);
+	color: black;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+
+}
+
+div#prodinfo a:hover {
+	background-color: rgb(80, 80, 80);
+	transition: 0.5s;
+	color: white;
+}
+div#prodinfo p {
+	margin: 20px;
+	color: rgba(255, 255, 255, 0.9);
+
+}
+
+div#precarrinho {
+	color: rgba(255, 255, 255, 0.9);
+
+	text-align: left;
+	padding: 20px;
+	font-size: 30px;
+
+	
+}
+
+div#precarrinho a {
+
+	padding: 8px;
+	margin: 10px;
+
+	border-radius: 8px;
+	transition: background-color 0.5s;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .40);
+	color: black;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+div#precarrinho a:hover {
+	background-color: rgb(80, 80, 80);
+	transition: 0.5s;
+	color: white;
+	color: rgba(255, 255, 255, 0.9);
+}
+div#precarrinho p {
+	margin: 20px;
+	color: rgba(255, 255, 255, 0.9);
+
+}
+
+figure#imgpre {
+
+	margin: 20px;
+	border: 1px solid black;
+	padding: 10px;
+	color: rgba(255, 255, 255, 0.8);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	
+	} 
+
+	section#prodobs {
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+		border: 1px solid black
+
+	}
